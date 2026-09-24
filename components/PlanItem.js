@@ -19,7 +19,7 @@ export default function PlanItem({ workout, done, showDone, onToggleDone, onRemo
         />
         <div className="min-w-0">
           <h3
-            className={`truncate font-display text-lg font-bold uppercase tracking-wide ${
+            className={`font-display text-lg font-bold uppercase tracking-wide ${
               done ? "text-muted line-through" : ""
             }`}
           >
@@ -30,10 +30,10 @@ export default function PlanItem({ workout, done, showDone, onToggleDone, onRemo
         </div>
       </div>
 
-      <div className="flex items-center gap-3 md:gap-3">
+      <div className="flex flex-wrap items-center gap-3">
         <Link
           href={`/workouts/${workout.id}`}
-          className="inline-flex h-[34px] items-center rounded-full border border-[#374151] px-[18px] text-xs font-semibold text-white transition hover:border-accent hover:text-accent"
+          className="inline-flex h-[34px] shrink-0 items-center whitespace-nowrap rounded-full border border-[#374151] px-[18px] text-xs font-semibold text-white transition hover:border-accent hover:text-accent"
         >
           View Details
         </Link>
@@ -41,7 +41,7 @@ export default function PlanItem({ workout, done, showDone, onToggleDone, onRemo
           <button
             onClick={onToggleDone}
             aria-pressed={done}
-            className={`inline-flex h-8 items-center gap-1.5 rounded-full px-4 text-xs font-semibold transition ${
+            className={`inline-flex h-8 shrink-0 items-center gap-1.5 whitespace-nowrap rounded-full px-4 text-xs font-semibold transition ${
               done
                 ? "border border-accent bg-transparent text-accent"
                 : "bg-accent text-black hover:brightness-95"

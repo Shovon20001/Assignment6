@@ -37,7 +37,7 @@ export default function LibrarySection() {
     <section id="library" className="scroll-mt-24 pt-12">
       <div className="mb-8 flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
         <div>
-          <h2 className="font-display text-4xl font-bold uppercase leading-none tracking-tight">The Library</h2>
+          <h2 className="font-display text-4xl font-bold uppercase leading-none tracking-tight">THE LIBRARY</h2>
           <p className="mt-2 text-sm text-muted">Twelve lifts covering every major muscle group.</p>
         </div>
         <label className="relative block w-full sm:w-64">

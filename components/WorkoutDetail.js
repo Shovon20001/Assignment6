@@ -98,7 +98,7 @@ export default function WorkoutDetail({ id }) {
 
         <section className="mt-8" aria-labelledby="instructions-heading">
           <h2 id="instructions-heading" className="font-display text-xl font-bold uppercase tracking-wide">
-            Instructions
+            INSTRUCTIONS
           </h2>
           <ol className="mt-4 space-y-3">
             {w.instructions.map((step, i) => (

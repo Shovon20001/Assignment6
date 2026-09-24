@@ -66,7 +66,7 @@ export default function MyPlan() {
 
   return (
     <div>
-      <h1 className="font-display text-4xl font-bold uppercase leading-none tracking-tight">My Plan</h1>
+      <h1 className="font-display text-4xl font-bold uppercase leading-none tracking-tight">MY PLAN</h1>
       <p className="mt-2 text-sm text-muted">Cap of five lifts for today. Finish them, then load more.</p>
 
       <section
@@ -126,7 +126,7 @@ export default function MyPlan() {
 
         {!loading && !error && items.length === 0 && (
           <div className="flex flex-col items-center rounded-xl border border-dashed border-[#2b303d] bg-[#111317] px-6 py-16 text-center">
-            <h2 className="font-display text-xl font-bold uppercase tracking-wide">Nothing here yet</h2>
+            <h2 className="font-display text-xl font-bold uppercase tracking-wide">NOTHING HERE YET</h2>
             <p className="mt-2 text-sm text-muted">Browse the library and add a lift to get today moving.</p>
             <Link
               href="/"
