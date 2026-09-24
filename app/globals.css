@@ -1,0 +1,63 @@
+@import "tailwindcss";
+
+/* ---------- FitLog design tokens (taken from the Figma / Penpot file) ---------- */
+@theme {
+  --color-ink: #0c0d10; /* page background */
+  --color-ink-deep: #090a0d; /* footer */
+  --color-panel: #15171d; /* cards */
+  --color-panel-alt: #14171e; /* plan rows */
+  --color-line: #222630; /* card borders */
+  --color-line-soft: #20242e; /* inner dividers */
+  --color-muted: #9ca3af;
+  --color-accent: #c2f800; /* lime accent */
+  --color-accent-dim: #1a2312; /* active nav pill */
+
+  --font-display: "Oswald Variable", "Oswald", Impact, "Arial Narrow", sans-serif;
+  --font-sans: "Inter Variable", "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+  background: var(--color-ink);
+}
+
+body {
+  background: var(--color-ink);
+  color: #fff;
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+}
+
+::selection {
+  background: var(--color-accent);
+  color: #000;
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 2px;
+}
+
+/* Skeleton shimmer used by loading states */
+@keyframes fl-shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+.fl-skeleton {
+  background: linear-gradient(90deg, #1a1d25 25%, #232732 37%, #1a1d25 63%);
+  background-size: 200% 100%;
+  animation: fl-shimmer 1.4s ease infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  .fl-skeleton {
+    animation: none;
+  }
+}
