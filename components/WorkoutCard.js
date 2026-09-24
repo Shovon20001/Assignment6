@@ -24,7 +24,9 @@ export default function WorkoutCard({ workout }) {
         </div>
         <h3 className="mt-2 font-display text-lg font-bold uppercase tracking-[0.025em]">{workout.name}</h3>
         <p className="mt-1 text-xs text-muted">{workout.equipment}</p>
-        <StatsRow workout={workout} className="mt-auto border-t border-line-soft pt-3 [margin-top:1rem]" />
+        <div className="mt-auto pt-4">
+          <StatsRow workout={workout} className="border-t border-line-soft pt-3" />
+        </div>
       </div>
     </Link>
   );
